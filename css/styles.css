@@ -1,0 +1,50 @@
+/* Body font ve genel ayarlar */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #434455;
+  background-color: #ffffff;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Başlık stilleri */
+h1,
+h2,
+h3 {
+  color: #2e2f42;
+  margin: 0;
+}
+
+/* Liste stilleri */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Bağlantılar */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover,
+a:focus {
+  color: #404bbf; /* Ödevdeki hover rengi */
+}
+
+/* Butonlar */
+button {
+  font-family: inherit;
+  background-color: #4d5ae5;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+}
+
+button:hover,
+button:focus {
+  background-color: #404bbf;
+}
