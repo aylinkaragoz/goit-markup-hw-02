@@ -1,50 +1,200 @@
-/* Body font ve genel ayarlar */
-body {
-  font-family: 'Roboto', sans-serif;
-  color: #434455;
-  background-color: #ffffff;
-  line-height: 1.5;
-  margin: 0;
+/* Header stilleri */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #f9f9f9;
 }
 
-/* Başlık stilleri */
-h1,
-h2,
-h3 {
+header a {
+  font-weight: 700;
+  font-size: 1.5rem;
   color: #2e2f42;
-  margin: 0;
 }
 
-/* Liste stilleri */
-ul {
-  list-style: none;
+header a span {
+  color: #4d5ae5;
+}
+
+/* Nav menü */
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  font-weight: 500;
+  color: #434455;
+  font-size: 1rem;
+}
+
+/* Nav link hover efekti */
+nav a:hover,
+nav a:focus {
+  color: #404bbf;
+  text-decoration: underline;
+}
+
+/* Footer stilleri */
+footer {
+  background-color: #f9f9f9;
+  padding: 30px 40px;
+  text-align: center;
+  color: #2e2f42;
+}
+
+footer h2 {
+  margin-bottom: 10px;
+}
+
+footer p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 1rem;
+}
+/* Hero Section */
+#studio {
+  background-color: #4d5ae5;
+  color: white;
+  padding: 100px 40px;
+  text-align: center;
+}
+
+#studio h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+#studio button {
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 15px 30px;
+  background-color: white;
+  color: #4d5ae5;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border: none;
+}
+
+#studio button:hover,
+#studio button:focus {
+  background-color: #404bbf;
+  color: white;
+  cursor: pointer;
+}
+/* Services Section */
+#services {
+  padding: 60px 40px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+#services h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #2e2f42;
+}
+
+#services ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
   padding: 0;
   margin: 0;
 }
 
-/* Bağlantılar */
-a {
-  text-decoration: none;
-  color: inherit;
+#services li {
+  flex: 1 1 200px;
+  max-width: 250px;
+  background-color: #f9f9f9;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(77, 90, 229, 0.15);
+  transition: transform 0.3s ease;
 }
 
-a:hover,
-a:focus {
-  color: #404bbf; /* Ödevdeki hover rengi */
+#services li:hover,
+#services li:focus-within {
+  transform: translateY(-8px);
 }
 
-/* Butonlar */
-button {
-  font-family: inherit;
-  background-color: #4d5ae5;
-  color: #ffffff;
-  cursor: pointer;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 4px;
+#services h3 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #4d5ae5;
 }
 
-button:hover,
-button:focus {
-  background-color: #404bbf;
+#services p {
+  font-weight: 400;
+  color: #434455;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+/* Our Team Section */
+#team {
+  padding: 60px 40px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+#team h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #2e2f42;
+}
+
+#team ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#team li {
+  max-width: 264px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(77, 90, 229, 0.15);
+  transition: transform 0.3s ease;
+}
+
+#team li:hover,
+#team li:focus-within {
+  transform: translateY(-8px);
+}
+
+#team img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+#team h3 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #4d5ae5;
+}
+
+#team p {
+  font-weight: 400;
+  color: #434455;
+  font-size: 1rem;
+  margin: 0;
 }
