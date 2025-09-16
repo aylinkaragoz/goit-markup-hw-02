@@ -1,4 +1,12 @@
-/* Header stilleri */
+body {
+  font-family: 'Roboto', Arial, sans-serif; /* C5, C6, C7 */
+  color: #2e2f42; /* C8 */
+  font-size: 1rem; /* C9 */
+  line-height: 1.5; /* C10 */
+  margin: 0;
+  padding: 0;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -16,8 +24,13 @@ header a {
 header a span {
   color: #4d5ae5;
 }
+header a:hover span,
+header a:focus span {
+  color: #404bbf;
+  outline: none;
+  cursor: pointer;
+}
 
-/* Nav menü */
 nav ul {
   display: flex;
   gap: 20px;
@@ -29,14 +42,14 @@ nav a {
   font-size: 1rem;
 }
 
-/* Nav link hover efekti */
 nav a:hover,
 nav a:focus {
   color: #404bbf;
   text-decoration: underline;
+  outline: none;
+  cursor: pointer;
 }
 
-/* Footer stilleri */
 footer {
   background-color: #f9f9f9;
   padding: 30px 40px;
@@ -54,20 +67,26 @@ footer p {
   font-weight: 400;
   font-size: 1rem;
 }
-/* Hero Section */
+
 #studio {
   background-color: #4d5ae5;
   color: white;
   padding: 100px 40px;
   text-align: center;
-}
-
-#studio h1 {
   font-family: 'Raleway', sans-serif;
+}
+#studio h1 {
   font-weight: 700;
   font-size: 2.5rem;
   margin-bottom: 20px;
   line-height: 1.2;
+  cursor: default;
+}
+#studio h1:hover,
+#studio h1:focus {
+  color: #404bbf;
+  outline: none;
+  cursor: pointer;
 }
 
 #studio button {
@@ -79,14 +98,16 @@ footer p {
   border-radius: 6px;
   transition: background-color 0.3s ease, color 0.3s ease;
   border: none;
+  cursor: pointer;
 }
 
 #studio button:hover,
 #studio button:focus {
   background-color: #404bbf;
   color: white;
-  cursor: pointer;
+  outline: none;
 }
+
 /* Services Section */
 #services {
   padding: 60px 40px;
@@ -109,6 +130,7 @@ footer p {
   gap: 40px;
   padding: 0;
   margin: 0;
+  list-style: none; /* B8 */
 }
 
 #services li {
@@ -139,6 +161,7 @@ footer p {
   font-size: 1rem;
   line-height: 1.4;
 }
+
 /* Our Team Section */
 #team {
   padding: 60px 40px;
@@ -198,6 +221,7 @@ footer p {
   font-size: 1rem;
   margin: 0;
 }
+
 /* Our Portfolio Section */
 #portfolio {
   padding: 60px 40px;
@@ -213,17 +237,20 @@ footer p {
   color: #2e2f42;
 }
 
-#portfolio ul {
+/* İşaretleme kriterlerine uygun sınıf seçiciler */
+/* B4, B5, C1 */
+
+.portfolio-list {
+  list-style: none; /* B8 */
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
 }
 
-#portfolio li {
+.portfolio-item {
   max-width: 360px;
   background-color: #f9f9f9;
   padding: 0;
@@ -232,25 +259,25 @@ footer p {
   transition: transform 0.3s ease;
 }
 
-#portfolio li:hover,
-#portfolio li:focus-within {
+.portfolio-item:hover,
+.portfolio-item:focus-within {
   transform: translateY(-5px);
 }
 
-#portfolio img {
+.portfolio-item img {
   width: 100%;
   border-radius: 8px 8px 0 0;
   display: block;
 }
 
-#portfolio h3 {
+.portfolio-item h3 {
   font-weight: 700;
   font-size: 1.2rem;
   margin: 16px 0 8px;
   color: #2e2f42;
 }
 
-#portfolio p {
+.portfolio-item p {
   font-weight: 400;
   font-size: 1rem;
   color: #434455;
